@@ -26,7 +26,7 @@ ollama pull llama3
 
 ### 3. **Clone repository**
 ```bash
-git clone ...
+git clone https://github.com/sky150/Ollama-chatbot.git
 ```
 
 ### 4. Run locally
