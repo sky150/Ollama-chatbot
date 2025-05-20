@@ -1,50 +1,39 @@
-# 🎈 Streamlit + LLM Examples App
+# 🎈 Ollama Chatbot  
+*A local AI chatbot powered by Ollama – lightweight, private, and offline-ready*
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/llm-examples?quickstart=1)
+![Demo](demo.gif) *(Optional: Add a screenshot/GIF later)*  
 
-Starter examples for building LLM apps with Streamlit.
+---
 
-## Overview of the App
+## 🌟 **Features**  
+✅ **Local & Private** – No cloud API calls, runs entirely on your machine  
+✅ **Any Ollama Model** – Use `llama3`, `mistral`, or custom models  
+✅ **Simple UI** – Built with Streamlit (no complex setup)  
 
-This app showcases a growing collection of LLM minimum working examples.
+---
 
-Current examples include:
+## 🛠️ **Installation**  
 
-- Chatbot
-- File Q&A
-- Chat with Internet search
-- LangChain Quickstart
-- LangChain PromptTemplate
-- Chat with user feedback
+### 1. **Install Ollama**  
+Download and run the Ollama server:  
+🔗 [https://ollama.ai/download](https://ollama.ai/download)  
 
-## Demo App
-
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://llm-examples.streamlit.app/)
-
-### Get an OpenAI API key
-
-You can get your own OpenAI API key by following the following instructions:
-
-1. Go to https://platform.openai.com/account/api-keys.
-2. Click on the `+ Create new secret key` button.
-3. Next, enter an identifier name (optional) and click on the `Create secret key` button.
-
-### Enter the OpenAI API key in Streamlit Community Cloud
-
-To set the OpenAI API key as an environment variable in Streamlit apps, do the following:
-
-1. At the lower right corner, click on `< Manage app` then click on the vertical "..." followed by clicking on `Settings`.
-2. This brings the **App settings**, next click on the `Secrets` tab and paste the API key into the text box as follows:
-
-```sh
-OPENAI_API_KEY='xxxxxxxxxx'
+### 2. **Download a Model**  
+Example:  
+```bash
+ollama pull llama3
 ```
 
-## Run it locally
-
-```sh
-virtualenv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-streamlit run Chatbot.py
+### 3. **Clone repository**
+```bash
+git clone ...
 ```
+
+### 4. Run locally
+```bash
+pyenv virtualenv 3.10.6 llm-examples
+pyenv activate llm-examples
+make install
+make run
+```
+
